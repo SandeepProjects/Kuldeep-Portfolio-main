@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(5, 54, 85);
+  color: white;
+  margin: 0;
+}
+
+header {
+  background-color: transparent;
+  padding: 20px;
+  text-align: left; /* Align the header content to the left */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column; /* Arrange the navigation items in a column */
+  margin-top: 10px;
+}
+
+.navbar a {
+  font-size: 16px;
+  text-decoration: none;
+  color: rgb(11, 255, 255);
+  margin: 5px 0; /* Add some margin between navigation items */
+}
+
+.home {
+  padding: 20px;
+  text-align: center;
+}
+
+.home-content {
+  max-width: 50%; /* Decrease the width of the content */
+  margin: 0 auto; /* Center the content */
+}
+
+.home-content h1 {
+  font-size: 18px; /* Decrease the font size */
+  font-weight: bold;
+  color: rgb(12, 255, 137);
+  margin-bottom: 10px;
+}
+
+.home-content h2 {
+  font-size: 14px; /* Decrease the font size */
+  color: rgb(167, 112, 255);
+  margin-bottom: 20px;
+}
+
+.img-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+img {
+  max-width: 50%; /* Decrease the width of the image */
+  height: auto;
+}
+
+.second {
+  background-color: var(--background-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.second h1 {
+  font-size: 16px; /* Decrease the font size */
+  font-weight: bold;
+}
+
+.timeline {
+  background-color: var(--primary-color);
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.card {
+  margin: 0 0 20px 0;
+  padding: 10px;
+  color: #007bff;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.third {
+  text-align: center;
+  padding: 20px;
+}
+
+.third a {
+  font-size: 14px; /* Decrease the font size */
+  width: 50%; /* Decrease the width of the link */
+  margin: 10px 0;
+  display: block;
+  padding: 10px;
+  background-color: rgb(5, 167, 167);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.third li {
+  font-size: 14px; /* Decrease the font size */
+  margin: 10px 0;
+}
+
+.contact {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact h2 {
+  font-size: 18px; /* Decrease the font size */
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.contact p {
+  font-size: 14px; /* Decrease the font size */
+  margin: 20px 0;
+}
+
+.contact .social-icons {
+  margin: 20px 0;
+}
+
+.contact .social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.contact .social-icons li a {
+  font-size: 18px; /* Decrease the font size */
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px; /* Decrease the font size */
+  color: #333;
+}

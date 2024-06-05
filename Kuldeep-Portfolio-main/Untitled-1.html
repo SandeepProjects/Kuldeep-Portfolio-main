@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+  <meta charset="UTF-8">
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuldeep's Portfolio</title>
+   
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Poppins;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url(kgg.jpeg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    body::before {
+      content: "";
+      background: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+    }
+
+    .logo {
+      font-size: 27px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 1s;
+    }
+
+    .logo:hover {
+      color: rgb(21, 255, 0);
+      transform: scale(0.9);
+    }
+
+    .navbar a {
+      font-size: 20px;
+      text-decoration: none;
+      color: rgb(11, 255, 255);
+      margin-left: 20px;
+      font-weight: 550;
+      transition: color 3s;
+    }
+
+    .navbar a:hover {
+      color: rgb(21, 255, 0);
+      cursor: pointer;
+    }
+
+    .home {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 0 10%;
+    }
+
+    .home-content {
+      max-width: 600px;
+    }
+
+    .home-content h1 {
+      font-size: 68px;
+      font-weight: 700;
+      color: rgb(12, 255, 137);
+    }
+
+    .home-content h2 {
+      font-size: 38px;
+      color: rgb(130, 58, 246)
+    }
+
+    /* .home-content p {
+  font-size: 16px;
+  font-weight: 600;
+  color: aqua;
+  border-radius: 14px;
+  transition: border 0.3s, transform 0.5s;
+    }
+
+    .home-content p:hover {
+  border: 2px solid gold;
+  transform: scale(1.03);
+  cursor: pointer;
+    } */
+
+    .home-content .btn-box {
+      color: aqua;
+    }
+
+    .btn-box a {
+      position: relative;
+      display: inline-flex;
+      width: 112px;
+      height: 100%;
+      border: 2px solid rgb(5, 167, 167);
+      background-color: rgb(10, 243, 243);
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 19px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      justify-content: center;
+      transition: transform 1s;
+    }
+
+    .btn-box a:hover {
+      transform: scale(0.8);
+    }
+
+    .home-sci {
+      position: absolute;
+      bottom: 40px;
+      width: 170px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    hr {
+      color: aqua;
+      height: 3px;
+    }
+
+    /* .home-sci a {
+  position: relative;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid rgb(4, 255, 255);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(4, 255, 255);
+  z-index: 1;
+  overflow: hidden;
+    }
+
+    .home-sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: aqua;
+  z-index: -1;
+  transition: 0.5s;
+    }
+
+    .home-sci a:hover {
+  color: blue;
+    }
+
+    .home-sci a:hover::before {
+  width: 100%;
+    } */
+
+    /* .homeimghover {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 500px;
+  height: 100%;
+  background: transparent;
+  transition: 2s;
+    } */
+
+
+    .about {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px 10%;
+      margin-top: 100vh;
+    }
+
+    #aboutus {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about h1 {
+      font-size: 42px;
+      font-weight: 600;
+      color: white;
+    }
+
+    .about p {
+      font-size: 18px;
+      color: aqua;
+      margin-top: 10px;
+    }
+
+    .education {
+      margin-top: 40px;
+    }
+
+    .education h2 {
+      font-size: 24px;
+      color: rgb(12, 255, 137);
+    }
+
+    .education ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .education li {
+      font-size: 16px;
+      color: aqua;
+      margin-top: 5px;
+    }
+
+    .technical-skills {
+      margin-top: 20px;
+    }
+
+    .technical-skills h2 {
+      font-size: 24px;
+      color: rgb(12, 255, 137);
+    }
+
+    .technical-skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .technical-skills li {
+      font-size: 16px;
+      color: aqua;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Kuldeep</a>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </header>
+  <section class="home">
+    <div class="home-content">
+      <h1>Hi, I'm Kuldeep Gautam</h1>
+      <h2>Sr. Data-Scientist</h2>
+      <!-- <p>
+    Skilled in building advanced and explainable models to classify
+    objects, predict outcomes or make recommendations.<br />
+    Use statistical, algorithmic, data mining, and visualization
+    techniques <br>to model complex problems.
+    <br />Extract opportunities, discover solutions, and deliver
+    actionable business insights. Own firm project's and use this autonomy
+    to find creative and innovative ways of solving problems and
+    delivering solutions.
+  </p> -->
+      <div class="btn-box">
+        <a href="mailto:sandy9599496861@gmail.com">Hire Me</a>
+      </div>
+
+    </div>
+
+    <hr>
+    <!-- <div class="home-sci">
+  <a href="https://www.facebook.com/kuldeep.gautam.9" target="_blank"><i class="bx bxl-facebook-circle"></i></a>
+  <a href="https://x.com/NitrrKuldeep?s=20" target="_blank"><i class="bx bxl-twitter"></i></a>
+  <a href="https://shorturl.at/iqEKO" target="_blank"><i class="bx bxl-linkedin"></i></a>
+
+    </div> -->
+    <!-- <span class="homeimghover"></span>
+  </section> -->
+    <section class="about">
+      <h1>About Me</h1>
+      <p> I am a Senior Data Scientist with a strong background in building advanced and explainable models to
+        classify objects, predict outcomes, and make recommendations. I use a wide range of techniques, including
+        statistical analysis, data mining, and data visualization, to model complex problems and extract actionable
+        business insights.
+      </p>
+
+      <div class="education">
+        <h2>Education</h2>
+        <ul>
+          <li>University of Connecticut School of Business</li>
+          <li>Master of Science in Business Analytics and Project Management, May 2019</li>
+          <li>Relevant Coursework: Data Science with Python, Data Mining, Predictive Modeling, Statistics,
+            Visual Analytics, Business Process Modeling and Data Management, Healthcare Analytics</li>
+        </ul>
+        <ul>
+          <li>National Institute of Technology Raipur, India</li>
+          <li>Bachelor of Technology in Metallurgical Engineering, July 2013</li>
+        </ul>
+      </div>
+
+      <div class="technical-skills">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>Programming Language and ML Framework: Python, R, SQL, Scikit-learn, TensorFlow, Keras, PyTorch
+          </li>
+          <li>Machine Learning: Linear Regression, Logistic Regression, Time Series Forecasting, PCA, SVM, k-NN,
+            Gradient Descent, Decision Trees, Bagging, Boosting, K-means, A/B Testing, CNN, Regularization, Feature
+            Engineering, Anomaly Detection</li>
+          <li>Exploratory Data Analysis: TensorFlow, Keras, Matplotlib, Seaborn, plotly, ggplotly, ggplot2,
+            stringr, dplyr, and tidyr</li>
+          <li>Tools: Tableau, SAS, RStudio, R Shiny, Rmarkdown, Jupyter, Spyder, Flexdashboard, MS SQL Server,
+            Microsoft Office Suite, and JMP</li>
+          <li>Certifications: Feature Engineer, Feature Selection, Google Analytics, TensorFlow Developer</li>
+        </ul>
+      </div>
+    </section>
+</body>
+
+</html>
+
+
+//<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuldeep's Portfolio</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+    }
+
+   
+    /* Shared styles */
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 27px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 1s;
+    }
+
+    .logo:hover {
+      color: rgb(21, 255, 0);
+      transform: scale(0.9);
+    }
+
+    .navbar a {
+      font-size: 20px;
+      text-decoration: none;
+      color: rgb(11, 255, 255);
+      margin-left: 20px;
+      font-weight: 550;
+      transition: color 3s;
+    }
+
+    .navbar a:hover {
+      color: rgb(21, 255, 0);
+      cursor: pointer;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+
+  <div class="about">
+    <div class="about-text">
+      <h1>About Me</h1>
+      <p>
+        I am a Senior Data Scientist with a strong background in building advanced and explainable models to classify
+        objects, predict outcomes, and make recommendations. I use a wide range of techniques, including statistical
+        analysis, data mining, and data visualization, to model complex problems and extract actionable business insights.
+      </p>
+    </div>
+
+    <div class="experience">
+      <h2>Experience</h2>
+
+      <div class="experience-item">
+        <h3>Data Scientist | XYZ Corp</h3>
+        <p>2019 - Present</p>
+        <p>Lead the development of machine learning models for predictive analytics and pattern recognition. Collaborated with cross-functional teams to implement data-driven solutions.</p>
+      </div>
+
+      <div class="experience-item">
+        <h3>Machine Learning Engineer | ABC Tech</h3>
+        <p>2016 - 2019</p>
+        <p>Designed and implemented machine learning algorithms for natural language processing and computer vision applications. Conducted research to stay updated on the latest advancements in the field.</p>
+      </div>
+    </div>
+
+    <div class="education">
+      <h2>Education</h2>
+
+      <div class="education-item">
+        <h3>Master of Science in Business Analytics and Project Management</h3>
+        <p>University of Connecticut School of Business | May 2019</p>
+        <p>Relevant Coursework: Data Science with Python, Data Mining, Predictive Modeling, Statistics, Visual Analytics, Business Process Modeling and Data Management, Healthcare Analytics</p>
+      </div>
+
+      <div class="education-item">
+        <h3>Bachelor of Technology in Metallurgical Engineering</h3>
+        <p>National Institute of Technology Raipur, India | July 2013</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
